@@ -186,6 +186,14 @@ pdftoppm -jpeg -r 150 -f 2 -l 5 document.pdf page  # Converts only pages 2-5
 - Avoid verbose variable names and redundant operations
 - Avoid unnecessary print statements
 
+## Repository Helper Scripts
+
+In this repository, you can also refer to these local helper files:
+
+- `scripts/document.py` - Python Document helper implementation used by OOXML workflows
+- `scripts/utilities.py` - utility helpers for XML operations
+- `scripts/templates/` - XML templates for comments/people related document parts
+
 ## Dependencies
 
 Required dependencies (install if not available):

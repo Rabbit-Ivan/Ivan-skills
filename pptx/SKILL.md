@@ -28,6 +28,8 @@ You need raw XML access for: comments, speaker notes, slide layouts, animations,
 
 **Note**: The unpack.py script is located at `skills/pptx/ooxml/scripts/unpack.py` relative to the project root. If the script doesn't exist at this path, use `find . -name "unpack.py"` to locate it.
 
+**Repository note**: The `ooxml/scripts/validation/` folder contains shared OOXML validation helpers for multiple Office formats (including `docx.py` and `redlining.py`). These files are intentionally kept together for reuse across document and presentation workflows.
+
 #### Key file structures
 * `ppt/presentation.xml` - Main presentation metadata and slide references
 * `ppt/slides/slide{N}.xml` - Individual slide contents (slide1.xml, slide2.xml, etc.)

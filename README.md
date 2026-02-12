@@ -1,6 +1,6 @@
 # Ivan Skills 集合
 
-本仓库包含 **25 个自定义 Skills**，用于扩展 Claude Code 的能力。
+本仓库包含 **29 个自定义 Skills**，用于扩展 Claude Code 的能力。
 
 ---
 
@@ -9,12 +9,12 @@
 | 类别 | 数量 | 说明 |
 |------|------|------|
 | 文档处理 | 6 | Office 文档、PDF、Markdown 转换 |
-| 前端开发 | 5 | 界面设计、落地页、UI/UX |
+| 前端开发 | 7 | 界面设计、落地页、UI/UX、品牌与视觉设计 |
 | Obsidian | 3 | 笔记、Bases、Canvas |
 | 代码质量 | 3 | 代码审查、AST 规则、文档一致性 |
 | 内容创作 | 3 | 公众号、PRD、文档协作 |
 | 工具集成 | 3 | Kie.ai、n8n、视频下载 |
-| 其他 | 2 | SEO、主题样式 |
+| 其他 | 4 | SEO、主题样式、技能发现、任务规划 |
 
 ---
 
@@ -88,7 +88,7 @@ UI/UX 设计智能库，包含丰富的设计资源。
 
 ```
 资源：50 种风格、21 种配色、50 组字体搭配、20 种图表
-技术栈：React、Next.js、Vue、Svelte、SwiftUI、React Native、Flutter、Tailwind
+技术栈：React、Next.js、Vue、Svelte、SwiftUI、React Native、Flutter、Tailwind、Nuxt.js、Nuxt UI
 ```
 
 ### benzenith-frontend-design
@@ -105,6 +105,22 @@ BenZenith "设计稿范式复刻"专用版，固化 PC 端规范。
 ```
 特点：PC 端尺寸规范、5 种页面模板、超大品牌签名 footer
 页面类型：首页、系列页、单品页、品牌故事、展览页
+```
+
+### brand-guidelines
+将 Anthropic 品牌色彩与字体规范应用到不同制品。
+
+```
+用途：品牌化视觉统一、文档/页面风格规范化
+触发场景：品牌视觉规范、公司样式标准应用
+```
+
+### canvas-design
+创建原创海报与静态视觉设计，输出 PNG/PDF。
+
+```
+触发场景：海报、视觉艺术、静态设计稿
+特点：强调原创设计，避免照搬现有艺术家作品
 ```
 
 ---
@@ -246,6 +262,21 @@ JavaScript 概念页面专项 SEO 审核。
 适用制品：幻灯片、文档、报告、HTML 落地页
 ```
 
+### find-skills
+根据需求发现并安装可用 skill。
+
+```
+触发场景：询问“有没有 skill 能做 X”、扩展能力、安装新 skill
+```
+
+### planning-with-files
+基于文件的复杂任务规划与会话恢复方案。
+
+```
+核心文件：task_plan.md、findings.md、progress.md
+触发场景：多步骤任务、研究项目、长链路执行
+```
+
 ---
 
 ## 🚀 使用方式
@@ -257,24 +288,44 @@ JavaScript 概念页面专项 SEO 审核。
 /frontend-design        # 创建前端界面
 /landing-page-guide-v2  # 创建落地页
 /ui-ux-pro-max          # UI/UX 设计
+/benzenith-frontend-design
+/benzenith-frontend-design2
+/brand-guidelines
+/canvas-design
 
 # 文档处理
 /docx                   # Word 文档
 /pdf                    # PDF 处理
 /pptx                   # PowerPoint
 /xlsx                   # Excel 处理
+/excel-analysis
+/markitdown             # 格式转换
 
 # 代码质量
 /clean-code-reviewer    # 代码审查
 /ast-grep-rule-crafter  # AST 规则
+/doc-consistency-reviewer
 
 # 内容创作
 /wechat-article-writer  # 公众号文章
 /product-manager        # PRD 文档
+/doc-coauthoring
 
-# 工具
+# 工具集成
+/kie-ai-generation
+/n8n-gen-skill
 /yt-dlp-downloader      # 下载视频
-/markitdown             # 格式转换
+
+# Obsidian
+/obsidian-markdown
+/obsidian-bases
+/json-canvas
+
+# 其他
+/seo-review
+/theme-factory
+/find-skills
+/planning-with-files
 ```
 
 ---
@@ -283,79 +334,58 @@ JavaScript 概念页面专项 SEO 审核。
 
 ```
 Ivan-skills/
-├── README.md                    # 本文件
-├── CLAUDE.md                    # Claude 项目说明
+├── README.md
+├── CLAUDE.md
+├── AGENTS.md
 ├── ast-grep-rule-crafter/
-│   ├── SKILL.md
-│   └── references/
 ├── benzenith-frontend-design/
-│   ├── SKILL.md
-│   └── references/
 ├── benzenith-frontend-design2/
-│   ├── SKILL.md
-│   └── references/
+├── brand-guidelines/
+├── canvas-design/
 ├── clean-code-reviewer/
-│   ├── SKILL.md
-│   └── references/
 ├── doc-coauthoring/
-│   └── SKILL.md
 ├── doc-consistency-reviewer/
-│   ├── SKILL.md
-│   └── references/
 ├── docx/
-│   ├── SKILL.md
-│   ├── docx-js.md
-│   └── ooxml.md
 ├── excel-analysis/
-│   └── SKILL.md
+├── find-skills/
 ├── frontend-design/
-│   └── SKILL.md
 ├── json-canvas/
-│   └── SKILL.md
 ├── kie-ai-generation/
-│   └── SKILL.md
 ├── landing-page-guide-v2/
-│   ├── SKILL.md
-│   └── references/
 ├── markitdown/
-│   ├── SKILL.md
-│   ├── assets/
-│   └── references/
 ├── n8n-gen-skill/
-│   ├── SKILL.md
-│   └── Readme.md
 ├── obsidian-bases/
-│   └── SKILL.md
 ├── obsidian-markdown/
-│   └── SKILL.md
 ├── pdf/
-│   ├── SKILL.md
-│   ├── forms.md
-│   └── reference.md
+├── planning-with-files/
 ├── pptx/
-│   ├── SKILL.md
-│   ├── html2pptx.md
-│   └── ooxml.md
 ├── product-manager/
-│   ├── SKILL.md
-│   └── references/
 ├── seo-review/
-│   └── SKILL.md
 ├── theme-factory/
-│   ├── SKILL.md
-│   └── themes/
 ├── ui-ux-pro-max/
-│   └── SKILL.md
 ├── wechat-article-writer/
-│   └── SKILL.md
 ├── xlsx/
-│   └── SKILL.md
 └── yt-dlp-downloader/
-    └── SKILL.md
 ```
+
+说明：
+- 每个 skill 目录至少包含 `SKILL.md`
+- 常见子目录包括 `references/`、`assets/`、`themes/`、`scripts/`、`data/`、`templates/`、`ooxml/` 等
 
 ---
 
 ## 📄 License
 
-各 Skill 的许可证见其目录下的 LICENSE.txt 文件。
+以下 9 个 Skill 目录包含独立 `LICENSE.txt`：
+
+- `brand-guidelines/`
+- `canvas-design/`
+- `docx/`
+- `frontend-design/`
+- `markitdown/`
+- `pdf/`
+- `pptx/`
+- `theme-factory/`
+- `xlsx/`
+
+其余 Skill 目录当前未单独放置许可证文件，请以对应来源或仓库整体约定为准。

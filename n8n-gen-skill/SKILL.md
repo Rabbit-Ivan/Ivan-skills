@@ -1,5 +1,5 @@
 ---
-name: n8n-gen
+name: n8n-gen-skill
 description: "Generate n8n workflows by researching official templates. This skill: (1) Searches and downloads reference workflows from n8n.io using Playwright, (2) Designs a new custom workflow based on 'n8n AI Agent' guidelines, (3) Generates the final JSON file, and (4) Creates a detailed requirement documentation."
 license: Proprietary
 ---
@@ -39,9 +39,9 @@ Use Playwright MCP to fetch reference materials from the official repository:
 
 ### 3. Generate n8n Workflow JSON
 
-1.  Read the specific design prompt file:
+1.  Read the specific design prompt file in this skill directory:
     ```
-    n8n AI Agent工作流设计提示词.md
+    n8n-gen-skill/n8n AI Agent工作流设计提示词.md
     ```
     *Note: This file contains logic for AI Agent architecture, DeepSeek v3 parameter settings, and best practices.*
     
@@ -86,20 +86,22 @@ The content **must** strictly follow this structure:
 
 ### Directory Structure
 
-```
+```text
+n8n-gen-skill/                         # Skill definition files
+├── SKILL.md
+├── Readme.md
+└── n8n AI Agent工作流设计提示词.md      # Required input
 
-root/
-├── n8n AI Agent工作流设计提示词.md  # (Required Input)
-├── n8n_references/                # (Intermediate: Downloaded templates)
+<workspace>/                           # Generated during execution
+├── n8n_references/                    # Intermediate: downloaded templates
 │   ├── template-1.json
 │   └── ...
-└── n8n_output/                    # (Final Output)
-├── YYYYMMDD-HHMMSS-project.json
-└── YYYYMMDD-HHMMSS-project-requirements.md
-
+└── n8n_output/                        # Final output
+    ├── YYYYMMDD-HHMMSS-project.json
+    └── YYYYMMDD-HHMMSS-project-requirements.md
 ```
 
 ### Key Implementation Notes
 - **Error Handling**: If `copy template` fails or the button is missing, skip to the next template.
 - **JSON Validity**: The generated JSON must be strictly valid JSON (no markdown code blocks inside the file) to ensure direct import into n8n.
-- **Reference Logic**: The AI should not blindly copy references but use them to understand *how* to connect nodes for the specific domain, then rebuild using the logic defined in the local prompt file.
+- **Reference Logic**: The AI should not blindly copy references but use them to understand *how* to connect nodes for the specific domain, then rebuild using the logic defined in the local prompt file (`n8n AI Agent工作流设计提示词.md`).

@@ -1,10 +1,10 @@
 # Ivan Skills 集合
 
-本目录包含 25 个自定义 Skills，用于扩展 Claude 的能力。
+本目录包含 29 个自定义 Skills，用于扩展 Claude 的能力。
 
 ## Skills 分类
 
-### 📝 文档处理
+### 📝 文档处理（6）
 - **docx** - Word 文档创建、编辑和分析
 - **pdf** - PDF 全面操作（提取、创建、合并、表单）
 - **pptx** - PowerPoint 演示文稿处理
@@ -12,36 +12,40 @@
 - **excel-analysis** - Excel 数据分析和可视化
 - **markitdown** - 多格式文件转 Markdown（15+ 格式）
 
-### 🎨 前端开发
+### 🎨 前端开发（7）
 - **frontend-design** - 高品质前端界面设计
 - **landing-page-guide-v2** - 高转化率落地页创建
-- **ui-ux-pro-max** - UI/UX 设计智能库（50 种风格）
+- **ui-ux-pro-max** - UI/UX 设计智能库（50 种风格，10 个技术栈）
 - **benzenith-frontend-design** - BenZenith 品牌前端规范
 - **benzenith-frontend-design2** - BenZenith 设计稿复刻版
+- **brand-guidelines** - 品牌色彩与字体规范应用
+- **canvas-design** - 生成海报与静态视觉设计
 
-### 📓 Obsidian 相关
+### 📓 Obsidian 相关（3）
 - **obsidian-markdown** - Obsidian 风格 Markdown 处理
 - **obsidian-bases** - Obsidian Bases 数据库视图
 - **json-canvas** - JSON Canvas 思维导图/流程图
 
-### 🔍 代码质量
+### 🔍 代码质量（3）
 - **clean-code-reviewer** - 基于《代码整洁之道》审查
 - **ast-grep-rule-crafter** - AST 代码搜索和重写规则
 - **doc-consistency-reviewer** - 代码与文档一致性检查
 
-### ✍️ 内容创作
+### ✍️ 内容创作（3）
 - **wechat-article-writer** - 公众号文章自动化写作
 - **product-manager** - 产品需求整合与 PRD 产出
 - **doc-coauthoring** - 结构化文档协作撰写
 
-### 🛠️ 工具集成
+### 🛠️ 工具集成（3）
 - **kie-ai-generation** - Kie.ai 视频/图片 API 集成
 - **n8n-gen-skill** - n8n 自动化工作流生成
 - **yt-dlp-downloader** - 多平台视频下载
 
-### 🎯 其他
+### 🎯 其他（4）
 - **seo-review** - JavaScript 页面 SEO 审核
 - **theme-factory** - 制品主题样式应用（10 种预设）
+- **find-skills** - 发现并安装可用 Skills
+- **planning-with-files** - 基于文件的复杂任务规划
 
 ## 使用方式
 
