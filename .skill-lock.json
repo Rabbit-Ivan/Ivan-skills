@@ -1,0 +1,45 @@
+{
+  "version": 3,
+  "skills": {
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "c2f31172b6f256272305a5e6e7228b258446899f",
+      "installedAt": "2026-02-10T20:18:54.951Z",
+      "updatedAt": "2026-02-10T20:24:18.204Z"
+    },
+    "planning-with-files": {
+      "source": "othmanadi/planning-with-files",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/othmanadi/planning-with-files.git",
+      "skillPath": "skills/planning-with-files/SKILL.md",
+      "skillFolderHash": "012040cac2785df474911e9d2d80c40731c6dad0",
+      "installedAt": "2026-02-10T20:27:52.705Z",
+      "updatedAt": "2026-02-10T20:27:52.705Z"
+    },
+    "markitdown": {
+      "source": "davila7/claude-code-templates",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/davila7/claude-code-templates.git",
+      "skillPath": "cli-tool/components/skills/scientific/markitdown/SKILL.md",
+      "skillFolderHash": "c34901af08a5dac40ec9035b4706e5c09c91d1b7",
+      "installedAt": "2026-02-10T20:34:27.827Z",
+      "updatedAt": "2026-02-10T20:34:27.827Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "codex",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode",
+    "antigravity",
+    "claude-code"
+  ]
+}

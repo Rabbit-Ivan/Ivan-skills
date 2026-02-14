@@ -1,0 +1,20 @@
+providers:
+  - id: codex
+    aliases:
+      - codex
+      - codex-cli
+    source_type: github
+    repo_url: https://github.com/openai/codex
+    official_url: https://www.npmjs.com/package/@openai/codex
+
+  - id: generic-npm-template
+    aliases: []
+    source_type: npm
+    package: ""
+    note: Fill package name when a tool is only distributed via npm.
+
+  - id: generic-pypi-template
+    aliases: []
+    source_type: pypi
+    package: ""
+    note: Fill package name when a tool is primarily distributed via PyPI.
