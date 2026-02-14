@@ -2,6 +2,26 @@
 
 本仓库包含 **29 个自定义 Skills**，用于扩展 Claude Code 的能力。
 
+## 📦 安装与同步
+
+统一安装入口：
+
+```bash
+npx skills add Rabbit-Ivan/Ivan-skills
+```
+
+建议全量安装：
+
+```bash
+npx -y skills add Rabbit-Ivan/Ivan-skills --yes --global --all
+```
+
+查看可安装技能列表：
+
+```bash
+npx skills add Rabbit-Ivan/Ivan-skills --list
+```
+
 ---
 
 ## 📊 Skills 概览
@@ -332,44 +352,49 @@ JavaScript 概念页面专项 SEO 审核。
 
 ## 📁 目录结构
 
-```
+```text
 Ivan-skills/
+├── skills/
+│   ├── ast-grep-rule-crafter/
+│   ├── benzenith-frontend-design/
+│   ├── benzenith-frontend-design2/
+│   ├── brand-guidelines/
+│   ├── canvas-design/
+│   ├── clean-code-reviewer/
+│   ├── doc-coauthoring/
+│   ├── doc-consistency-reviewer/
+│   ├── docx/
+│   ├── excel-analysis/
+│   ├── find-skills/
+│   ├── frontend-design/
+│   ├── json-canvas/
+│   ├── kie-ai-generation/
+│   ├── landing-page-guide-v2/
+│   ├── markitdown/
+│   ├── n8n-gen-skill/
+│   ├── obsidian-bases/
+│   ├── obsidian-markdown/
+│   ├── pdf/
+│   ├── planning-with-files/
+│   ├── pptx/
+│   ├── product-manager/
+│   ├── seo-review/
+│   ├── theme-factory/
+│   ├── ui-ux-pro-max/
+│   ├── wechat-article-writer/
+│   ├── xlsx/
+│   └── yt-dlp-downloader/
+├── scripts/
+│   ├── skills-manager.sh
+│   └── skills-validate.sh
+├── Makefile
 ├── README.md
 ├── CLAUDE.md
-├── AGENTS.md
-├── ast-grep-rule-crafter/
-├── benzenith-frontend-design/
-├── benzenith-frontend-design2/
-├── brand-guidelines/
-├── canvas-design/
-├── clean-code-reviewer/
-├── doc-coauthoring/
-├── doc-consistency-reviewer/
-├── docx/
-├── excel-analysis/
-├── find-skills/
-├── frontend-design/
-├── json-canvas/
-├── kie-ai-generation/
-├── landing-page-guide-v2/
-├── markitdown/
-├── n8n-gen-skill/
-├── obsidian-bases/
-├── obsidian-markdown/
-├── pdf/
-├── planning-with-files/
-├── pptx/
-├── product-manager/
-├── seo-review/
-├── theme-factory/
-├── ui-ux-pro-max/
-├── wechat-article-writer/
-├── xlsx/
-└── yt-dlp-downloader/
+└── AGENTS.md
 ```
 
 说明：
-- 每个 skill 目录至少包含 `SKILL.md`
+- 每个 skill 目录至少包含 `skills/<name>/SKILL.md`
 - 常见子目录包括 `references/`、`assets/`、`themes/`、`scripts/`、`data/`、`templates/`、`ooxml/` 等
 
 ---
@@ -378,14 +403,14 @@ Ivan-skills/
 
 以下 9 个 Skill 目录包含独立 `LICENSE.txt`：
 
-- `brand-guidelines/`
-- `canvas-design/`
-- `docx/`
-- `frontend-design/`
-- `markitdown/`
-- `pdf/`
-- `pptx/`
-- `theme-factory/`
-- `xlsx/`
+- `skills/brand-guidelines/`
+- `skills/canvas-design/`
+- `skills/docx/`
+- `skills/frontend-design/`
+- `skills/markitdown/`
+- `skills/pdf/`
+- `skills/pptx/`
+- `skills/theme-factory/`
+- `skills/xlsx/`
 
 其余 Skill 目录当前未单独放置许可证文件，请以对应来源或仓库整体约定为准。

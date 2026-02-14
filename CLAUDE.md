@@ -2,6 +2,14 @@
 
 本目录包含 29 个自定义 Skills，用于扩展 Claude 的能力。
 
+## 安装与同步
+
+- 安装入口：`npx skills add Rabbit-Ivan/Ivan-skills`
+- 推荐全量安装：`npx -y skills add Rabbit-Ivan/Ivan-skills --yes --global --all`
+- 查看列表：`npx skills add Rabbit-Ivan/Ivan-skills --list`
+- 目录约定：`skills/<skill-name>/SKILL.md`
+- 本地校验：`make skills-validate`
+
 ## Skills 分类
 
 ### 📝 文档处理（6）
