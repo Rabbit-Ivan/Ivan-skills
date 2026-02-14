@@ -1,4 +1,0 @@
-interface:
-  display_name: "CLI Upgrade"
-  short_description: "对比 CLI 最新稳定版与前三个稳定版更新摘要"
-  default_prompt: "Use $cli-upgrade to compare the latest stable release with the previous three stable versions for a CLI tool, then explain updates in plain language."
