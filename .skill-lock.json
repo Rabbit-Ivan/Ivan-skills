@@ -27,6 +27,24 @@
       "skillFolderHash": "c34901af08a5dac40ec9035b4706e5c09c91d1b7",
       "installedAt": "2026-02-10T20:34:27.827Z",
       "updatedAt": "2026-02-10T20:34:27.827Z"
+    },
+    ".agents": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "01b85c365cf425a88eaede790f1e5c0c6fc935c6",
+      "installedAt": "2026-02-14T19:57:31.324Z",
+      "updatedAt": "2026-02-14T19:59:41.192Z"
+    },
+    "frontend-slides": {
+      "source": "zarazhangrui/frontend-slides",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/zarazhangrui/frontend-slides.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "384d1a07ba1fd59ff626b141caa65f51a44ccc73",
+      "installedAt": "2026-03-04T19:00:05.288Z",
+      "updatedAt": "2026-03-04T19:00:05.288Z"
     }
   },
   "dismissed": {
