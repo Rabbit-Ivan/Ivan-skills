@@ -1,35 +1,83 @@
 # Repository Guidelines
 
 ## 项目概述
-本仓库是 Ivan 的 skill 管理中心，用于集中维护 Claude Code skill。核心内容位于 `skills/`，每个 skill 独立目录管理。
+Ivan 的 Claude Code skill 管理中心（`Rabbit-Ivan/Ivan-skills`）。32 个 skill，654 文件，纯内容仓库。
 
-## 安装、运行、构建
-本仓库为 skill 内容仓库，不提供传统前后端运行服务。
+## 安装
+```bash
+npx skills add Rabbit-Ivan/Ivan-skills          # 交互选择
+npx -y skills add Rabbit-Ivan/Ivan-skills --yes --global --all  # 全量安装
+npx skills add Rabbit-Ivan/Ivan-skills --list    # 查看列表
+```
+可选环境变量：`GITHUB_TOKEN`（受限网络）、`HTTPS_PROXY` / `HTTP_PROXY`（代理）。
 
-- 安装 skills：`npx skills add Rabbit-Ivan/Ivan-skills`
-- 全量安装：`npx -y skills add Rabbit-Ivan/Ivan-skills --yes --global --all`
-- 查看列表：`npx skills add Rabbit-Ivan/Ivan-skills --list`
+## 目录结构
+```
+skills/<name>/
+├── SKILL.md           # 必需，skill 入口
+├── references/        # 可选，参考资料
+├── scripts/           # 可选，辅助脚本（Python/Node/Shell）
+└── assets/            # 可选，资源文件
+```
+无 Web 应用、无 API、无 CI/CD、无 linter/formatter 配置。
 
-环境变量（可选）：
-- `GITHUB_TOKEN`：在受限网络环境下访问 GitHub API 时可配置。
-- `HTTPS_PROXY` / `HTTP_PROXY`：需要代理时配置。
+### 非标准子目录（部分 skill 特有）
+- `ooxml/`：docx、pptx 共享的 OOXML 模板与脚本
+- `data/`：ui-ux-pro-max 的设计数据集
+- `agents/`：cli-upgrade、static-residential-ip-assessor 的子 agent 配置
+- `themes/`：theme-factory 的预设主题
+- `canvas-fonts/`：canvas-design 的字体文件（占 83 文件大部分）
+- `templates/`：planning-with-files 的计划模板
 
-## 项目结构、路由、API
-- 目录结构：
-  - `skills/<skill-name>/SKILL.md`：skill 入口说明。
-  - `skills/<skill-name>/references/`：参考资料（可选）。
-  - `skills/<skill-name>/scripts/`：辅助脚本（可选）。
-  - `skills/<skill-name>/assets/`：资源文件（可选）。
-- 前后端页面路由：无（本仓库不包含 Web 应用）。
-- 项目 API 接口：无（本仓库不提供服务端 API）。
+## Skill 复杂度速查
+高复杂度（>50 文件，含脚本/OOXML）：
+- `docx`（59 文件）— Word 文档处理，ooxml/ + scripts/，SKILL.md 含严格反模式规则
+- `pptx`（56 文件）— PPT 处理，ooxml/ + scripts/，与 docx 共享 OOXML 模式
+- `canvas-design`（83 文件）— 视觉创作，大量字体资源
 
-## 技术栈与依赖
-- 主要内容：Markdown 文档、少量脚本资源。
-- 分发方式：通过 `npx skills add` 从 GitHub 仓库安装。
-- Skill 内可能依赖 Python / Node.js / Shell 工具，具体以各 skill 目录文档为准。
+中复杂度（10-50 文件或大型 SKILL.md）：
+- `ui-ux-pro-max`（22 文件）— 设计智库，data/ + scripts/
+- `pdf`（12 文件）— PDF 处理，scripts/
+- `seo-review`（951 行 SKILL.md）— SEO 审核，最大单文件
+- `landing-page-guide-v2`（794 行）— 落地页设计指南
+- `json-canvas`（643 行）— Obsidian Canvas 格式
+- `obsidian-markdown`（621 行）— Obsidian 语法
+- `obsidian-bases`（619 行）— Obsidian 库视图
+
+低复杂度（<10 文件，标准结构）：其余 22 个 skill。
+
+## 外部来源 Skill（.skill-lock.json 追踪）
+5 个 skill 从外部仓库安装，修改前确认来源：
+- `find-skills`、`planning-with-files`、`markitdown`、`frontend-slides`、`.agents`
+
+## 跨 Skill 关联
+- docx ↔ pptx：共享 OOXML 脚本模式，修改 ooxml/ 时两者都需验证
+- markitdown：引用其他 skill 能力（PDF/DOCX 转换）
+- theme-factory：为其他输出型 skill（slides/docx/pptx）提供主题
+- ui-ux-pro-max 有中英双语版本（同名 skill，不同 description 语言）
 
 ## 维护规范
-- 目录名统一使用 kebab-case。
-- 每个 skill 至少包含 `SKILL.md`。
-- 默认流程使用 `feature/*` 分支 + PR 合并到 `main`。
-- 不提交临时文件与缓存目录（例如 `.DS_Store`、`__pycache__/`、`*.pyc`、`skills_backup_20260214/`）。
+- 目录名统一 kebab-case
+- 每个 skill 必须含 `SKILL.md`
+- 分支流程：`feature/*` → PR → `main`
+- 禁止提交：`.DS_Store`、`__pycache__/`、`*.pyc`、`skills_backup_20260214/`
+
+## Skill 文档中的关键反模式（跨 skill 通用）
+- NEVER use unicode bullets in OOXML（docx/pptx）
+- NEVER use `\n` for line breaks in XML content（docx）
+- NEVER use `#` prefix for hex colors in OOXML（pptx）
+- DO NOT use generic AI patterns / "AI slop"（frontend-design、benzenith-frontend-design）
+- 注释一律用英文，代码中文注释是反模式
+
+## 技术栈
+- 主体：Markdown 文档
+- 脚本：Python（xlsx recalc、pdf 处理）、Node.js（docx/pptx OOXML）、Shell
+- 分发：`npx skills add` 从 GitHub 仓库
+- 无 package.json / requirements.txt — 脚本依赖在各 skill SKILL.md 中说明
+
+## 新增 Skill 检查清单
+1. `skills/<kebab-case-name>/SKILL.md` 已创建
+2. SKILL.md 含 description 字段（供 skill 列表展示）
+3. 脚本放 `scripts/`，参考资料放 `references/`，资源放 `assets/`
+4. 如有外部依赖，在 SKILL.md 中明确说明
+5. 如与现有 skill 有关联（如共享 ooxml 模式），在两边文档中注明
