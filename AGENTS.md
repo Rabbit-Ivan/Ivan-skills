@@ -5,9 +5,10 @@ Ivan 的 Claude Code skill 管理中心（`Rabbit-Ivan/Ivan-skills`）。32 个 
 
 ## 安装
 ```bash
-npx skills add Rabbit-Ivan/Ivan-skills          # 交互选择
-npx -y skills add Rabbit-Ivan/Ivan-skills --yes --global --all  # 全量安装
-npx skills add Rabbit-Ivan/Ivan-skills --list    # 查看列表
+npx skills add https://github.com/Rabbit-Ivan/Ivan-skills/tree/main/skills            # 交互选择
+npx -y skills add https://github.com/Rabbit-Ivan/Ivan-skills/tree/main/skills --all --global  # 全量安装
+npx -y skills add https://github.com/Rabbit-Ivan/Ivan-skills/tree/main/skills --list          # 查看列表
+npx -y skills add https://github.com/Rabbit-Ivan/Ivan-skills/tree/main/skills/pdf --global    # 安装单个 skill
 ```
 可选环境变量：`GITHUB_TOKEN`（受限网络）、`HTTPS_PROXY` / `HTTP_PROXY`（代理）。
 

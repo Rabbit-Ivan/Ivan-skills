@@ -4,22 +4,28 @@
 
 ## 安装与同步
 
-安装仓库中的 skills：
+交互式安装（可选 skill 和 agent）：
 
 ```bash
-npx skills add Rabbit-Ivan/Ivan-skills
+npx skills add https://github.com/Rabbit-Ivan/Ivan-skills/tree/main/skills
 ```
 
 全量安装（推荐）：
 
 ```bash
-npx -y skills add Rabbit-Ivan/Ivan-skills --yes --global --all
+npx -y skills add https://github.com/Rabbit-Ivan/Ivan-skills/tree/main/skills --all --global
 ```
 
 查看可安装 skills：
 
 ```bash
-npx skills add Rabbit-Ivan/Ivan-skills --list
+npx -y skills add https://github.com/Rabbit-Ivan/Ivan-skills/tree/main/skills --list
+```
+
+安装单个 skill（以 pdf 为例）：
+
+```bash
+npx -y skills add https://github.com/Rabbit-Ivan/Ivan-skills/tree/main/skills/pdf --global
 ```
 
 ## 仓库结构
