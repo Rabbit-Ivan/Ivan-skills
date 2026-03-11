@@ -2,31 +2,31 @@
   "version": 3,
   "skills": {
     "find-skills": {
-      "source": "vercel-labs/skills",
+      "source": "Rabbit-Ivan/Ivan-skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
       "skillPath": "skills/find-skills/SKILL.md",
       "skillFolderHash": "c2f31172b6f256272305a5e6e7228b258446899f",
       "installedAt": "2026-02-10T20:18:54.951Z",
-      "updatedAt": "2026-02-10T20:24:18.204Z"
+      "updatedAt": "2026-03-08T11:00:21.930Z"
     },
     "planning-with-files": {
-      "source": "othmanadi/planning-with-files",
+      "source": "Rabbit-Ivan/Ivan-skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/othmanadi/planning-with-files.git",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
       "skillPath": "skills/planning-with-files/SKILL.md",
       "skillFolderHash": "012040cac2785df474911e9d2d80c40731c6dad0",
       "installedAt": "2026-02-10T20:27:52.705Z",
-      "updatedAt": "2026-02-10T20:27:52.705Z"
+      "updatedAt": "2026-03-08T11:00:27.800Z"
     },
     "markitdown": {
-      "source": "davila7/claude-code-templates",
+      "source": "Rabbit-Ivan/Ivan-skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/davila7/claude-code-templates.git",
-      "skillPath": "cli-tool/components/skills/scientific/markitdown/SKILL.md",
-      "skillFolderHash": "c34901af08a5dac40ec9035b4706e5c09c91d1b7",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/markitdown/SKILL.md",
+      "skillFolderHash": "7442afd064d7243412acf71d4faaa61b6a6a251a",
       "installedAt": "2026-02-10T20:34:27.827Z",
-      "updatedAt": "2026-02-10T20:34:27.827Z"
+      "updatedAt": "2026-03-08T11:00:25.267Z"
     },
     ".agents": {
       "source": "Rabbit-Ivan/Ivan-skills",
@@ -38,13 +38,13 @@
       "updatedAt": "2026-02-14T19:59:41.192Z"
     },
     "frontend-slides": {
-      "source": "zarazhangrui/frontend-slides",
+      "source": "Rabbit-Ivan/Ivan-skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/zarazhangrui/frontend-slides.git",
-      "skillPath": "SKILL.md",
-      "skillFolderHash": "384d1a07ba1fd59ff626b141caa65f51a44ccc73",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/frontend-slides/SKILL.md",
+      "skillFolderHash": "8c36e8333246b69a1d1734106c7cb2b1ea1bbe92",
       "installedAt": "2026-03-04T19:00:05.288Z",
-      "updatedAt": "2026-03-04T19:00:05.288Z"
+      "updatedAt": "2026-03-08T11:00:22.936Z"
     },
     "static-residential-ip-assessor": {
       "source": "Rabbit-Ivan/Ivan-skills",
@@ -53,7 +53,232 @@
       "skillPath": "skills/static-residential-ip-assessor/SKILL.md",
       "skillFolderHash": "470e05a8ab76720f145d0d5ed397b2880122f400",
       "installedAt": "2026-03-05T10:07:03.109Z",
-      "updatedAt": "2026-03-05T10:07:03.109Z"
+      "updatedAt": "2026-03-08T11:00:30.804Z"
+    },
+    "ast-grep-rule-crafter": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/ast-grep-rule-crafter/SKILL.md",
+      "skillFolderHash": "c2bae26ff1a92b1ea6e1d2b3cbf93865b7eecb87",
+      "installedAt": "2026-03-08T11:00:16.391Z",
+      "updatedAt": "2026-03-08T11:00:16.391Z"
+    },
+    "benzenith-frontend-design": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/benzenith-frontend-design/SKILL.md",
+      "skillFolderHash": "99703e0c48c2476dd53c0131f4b75cd983f0b91f",
+      "installedAt": "2026-03-08T11:00:16.904Z",
+      "updatedAt": "2026-03-08T11:00:16.904Z"
+    },
+    "benzenith-frontend-design2": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/benzenith-frontend-design2/SKILL.md",
+      "skillFolderHash": "a4a06e34be8fb5fa4470b17f5c7f4cdd84d2439d",
+      "installedAt": "2026-03-08T11:00:17.404Z",
+      "updatedAt": "2026-03-08T11:00:17.404Z"
+    },
+    "brand-guidelines": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/brand-guidelines/SKILL.md",
+      "skillFolderHash": "7dc45f289fa37f9763a993008d9500e9a157fa4a",
+      "installedAt": "2026-03-08T11:00:17.919Z",
+      "updatedAt": "2026-03-08T11:00:17.919Z"
+    },
+    "canvas-design": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/canvas-design/SKILL.md",
+      "skillFolderHash": "928af0a3279dc4e0c0e6ceaf407a8542a2bb2aa2",
+      "installedAt": "2026-03-08T11:00:18.430Z",
+      "updatedAt": "2026-03-08T11:00:18.430Z"
+    },
+    "clean-code-reviewer": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/clean-code-reviewer/SKILL.md",
+      "skillFolderHash": "ce3641d757f556581378fd05a98b3673bae34679",
+      "installedAt": "2026-03-08T11:00:18.929Z",
+      "updatedAt": "2026-03-08T11:00:18.929Z"
+    },
+    "cli-upgrade": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/cli-upgrade/SKILL.md",
+      "skillFolderHash": "54d354600b7205cb68bc459a6d3e46e9bcee8d59",
+      "installedAt": "2026-03-08T11:00:19.434Z",
+      "updatedAt": "2026-03-08T11:00:19.434Z"
+    },
+    "doc-coauthoring": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/doc-coauthoring/SKILL.md",
+      "skillFolderHash": "d9df960e61fe2bafe9183e37de6f9f6b73b74087",
+      "installedAt": "2026-03-08T11:00:19.923Z",
+      "updatedAt": "2026-03-08T11:00:19.923Z"
+    },
+    "doc-consistency-reviewer": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/doc-consistency-reviewer/SKILL.md",
+      "skillFolderHash": "d2d125c8bbe9f29a781ed5bf6b133f9a54697f5d",
+      "installedAt": "2026-03-08T11:00:20.450Z",
+      "updatedAt": "2026-03-08T11:00:20.450Z"
+    },
+    "docx": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/docx/SKILL.md",
+      "skillFolderHash": "1e885d469740a354c45677fb3fa0ed66acba511d",
+      "installedAt": "2026-03-08T11:00:20.956Z",
+      "updatedAt": "2026-03-08T11:00:20.956Z"
+    },
+    "Excel Analysis": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/excel-analysis/SKILL.md",
+      "skillFolderHash": "9ab82820ec536e045a9b7c841cf5bce417315b68",
+      "installedAt": "2026-03-08T11:00:21.439Z",
+      "updatedAt": "2026-03-08T11:00:21.439Z"
+    },
+    "frontend-design": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "skillFolderHash": "928950704df8a8b885c03de5da626331e6f29cf8",
+      "installedAt": "2026-03-08T11:00:22.436Z",
+      "updatedAt": "2026-03-08T11:00:22.436Z"
+    },
+    "json-canvas": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/json-canvas/SKILL.md",
+      "skillFolderHash": "20c2ea7352cd96a9b8916e5d2b9258e3feda6be4",
+      "installedAt": "2026-03-08T11:00:23.632Z",
+      "updatedAt": "2026-03-08T11:00:23.632Z"
+    },
+    "kie-ai-generation": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/kie-ai-generation/SKILL.md",
+      "skillFolderHash": "96c8676a3d24e1055fcecfe63aa567d56528254e",
+      "installedAt": "2026-03-08T11:00:24.235Z",
+      "updatedAt": "2026-03-08T11:00:24.235Z"
+    },
+    "landing-page-guide-v2": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/landing-page-guide-v2/SKILL.md",
+      "skillFolderHash": "6d3080a4d63b0238da610c6d2b06cd78500a9ffe",
+      "installedAt": "2026-03-08T11:00:24.759Z",
+      "updatedAt": "2026-03-08T11:00:24.759Z"
+    },
+    "n8n-gen": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/n8n-gen-skill/SKILL.md",
+      "skillFolderHash": "7c5f76e117230f5bcd89b507c4e9958267858e52",
+      "installedAt": "2026-03-08T11:00:25.776Z",
+      "updatedAt": "2026-03-08T11:00:25.776Z"
+    },
+    "obsidian-bases": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/obsidian-bases/SKILL.md",
+      "skillFolderHash": "6417a6631a4dff74d35b254c46f9bbb4c7790583",
+      "installedAt": "2026-03-08T11:00:26.273Z",
+      "updatedAt": "2026-03-08T11:00:26.273Z"
+    },
+    "obsidian-markdown": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/obsidian-markdown/SKILL.md",
+      "skillFolderHash": "18e6b12cd34a4c6fbadebec55a9b01d96c1f2c12",
+      "installedAt": "2026-03-08T11:00:26.784Z",
+      "updatedAt": "2026-03-08T11:00:26.784Z"
+    },
+    "pdf": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/pdf/SKILL.md",
+      "skillFolderHash": "f3e7babdd8d9cc8b5627311c16e07f1218c39bff",
+      "installedAt": "2026-03-08T11:00:27.293Z",
+      "updatedAt": "2026-03-08T11:00:27.293Z"
+    },
+    "playwright-interactive": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/playwright-interactive/SKILL.md",
+      "skillFolderHash": "6d18386434d5cc0235d62e32ca4f7db8fc9813f6",
+      "installedAt": "2026-03-08T11:00:28.294Z",
+      "updatedAt": "2026-03-08T11:00:28.294Z"
+    },
+    "pptx": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/pptx/SKILL.md",
+      "skillFolderHash": "744bc44ba6edd58d6376374206be1fd4b1c8697d",
+      "installedAt": "2026-03-08T11:00:28.803Z",
+      "updatedAt": "2026-03-08T11:00:28.803Z"
+    },
+    "product-manager": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/product-manager/SKILL.md",
+      "skillFolderHash": "9f5d5b2acfc8ebbfabe0c0d6613a78916d1a45c7",
+      "installedAt": "2026-03-08T11:00:29.272Z",
+      "updatedAt": "2026-03-08T11:00:29.272Z"
+    },
+    "seo-review": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/seo-review/SKILL.md",
+      "skillFolderHash": "b8233439e5a6fba3f2e10cfa4a415a471508a59d",
+      "installedAt": "2026-03-08T11:00:29.757Z",
+      "updatedAt": "2026-03-08T11:00:29.757Z"
+    },
+    "sora": {
+      "source": "Rabbit-Ivan/Ivan-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
+      "skillPath": "skills/sora/SKILL.md",
+      "skillFolderHash": "860bbfc8e81f34d0d5e1c09b7ac1ad9ceeeb214a",
+      "installedAt": "2026-03-08T11:00:30.306Z",
+      "updatedAt": "2026-03-08T11:00:30.306Z"
+    },
+    "skill-creator": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/skill-creator/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-03-11T03:24:10.000Z",
+      "updatedAt": "2026-03-11T03:24:10.000Z"
     }
   },
   "dismissed": {
@@ -68,7 +293,6 @@
     "github-copilot",
     "kimi-cli",
     "opencode",
-    "antigravity",
     "claude-code"
   ]
 }
