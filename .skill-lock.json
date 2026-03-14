@@ -276,9 +276,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/anthropics/skills.git",
       "skillPath": "skills/skill-creator/SKILL.md",
-      "skillFolderHash": "",
+      "skillFolderHash": "98a510d1cfef9f82c3b1eec200229ca68725e613",
       "installedAt": "2026-03-11T03:24:10.000Z",
-      "updatedAt": "2026-03-11T03:24:10.000Z"
+      "updatedAt": "2026-03-11T03:52:20.716Z"
     }
   },
   "dismissed": {
@@ -293,6 +293,7 @@
     "github-copilot",
     "kimi-cli",
     "opencode",
-    "claude-code"
+    "claude-code",
+    "antigravity"
   ]
 }
