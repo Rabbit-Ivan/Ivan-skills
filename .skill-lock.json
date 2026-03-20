@@ -114,9 +114,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/Rabbit-Ivan/Ivan-skills.git",
       "skillPath": "skills/cli-upgrade/SKILL.md",
-      "skillFolderHash": "54d354600b7205cb68bc459a6d3e46e9bcee8d59",
+      "skillFolderHash": "b62fe81b43d532a0d5c6e884b4c95287edd74182",
       "installedAt": "2026-03-08T11:00:19.434Z",
-      "updatedAt": "2026-03-08T11:00:19.434Z"
+      "updatedAt": "2026-03-20T02:55:29.839Z"
     },
     "doc-coauthoring": {
       "source": "Rabbit-Ivan/Ivan-skills",
@@ -293,6 +293,7 @@
     "github-copilot",
     "kimi-cli",
     "opencode",
+    "warp",
     "claude-code",
     "antigravity"
   ]
