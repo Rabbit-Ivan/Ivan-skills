@@ -167,12 +167,76 @@ def fetch_pypi_releases(package_name: str, count: int = 4) -> List[Dict[str, Any
     return rows[:count]
 
 
+_CHANGELOG_HEADING = re.compile(r"^##\s+v?(\d+\.\d+\.\d+(?:[-+._a-zA-Z0-9]*)?)")
+
+
+def _parse_changelog_md(content: str, owner: str, repo: str, count: int = 4) -> List[Dict[str, Any]]:
+    """Parse a CHANGELOG.md into structured release entries."""
+    lines = content.splitlines()
+    releases: List[Dict[str, Any]] = []
+    current_version: Optional[str] = None
+    current_lines: List[str] = []
+
+    def _flush():
+        if current_version and _is_stable_label(current_version):
+            notes = "\n".join(current_lines).strip()
+            url = f"https://github.com/{owner}/{repo}/blob/main/CHANGELOG.md"
+            releases.append(
+                {
+                    "version": current_version,
+                    "title": current_version,
+                    "published_at": None,
+                    "url": url,
+                    "notes": notes,
+                    "source": "github_changelog",
+                }
+            )
+
+    for line in lines:
+        match = _CHANGELOG_HEADING.match(line)
+        if match:
+            _flush()
+            if len(releases) >= count:
+                break
+            current_version = match.group(1)
+            current_lines = []
+        elif current_version is not None:
+            current_lines.append(line)
+
+    if len(releases) < count:
+        _flush()
+
+    return releases[:count]
+
+
+def _fetch_text(url: str) -> str:
+    req = urllib.request.Request(url, headers={"User-Agent": "cli-upgrade-skill"})
+    with urllib.request.urlopen(req, timeout=30) as response:
+        return response.read().decode("utf-8")
+
+
+def fetch_github_changelog(changelog_url: str, owner: str, repo: str, count: int = 4) -> List[Dict[str, Any]]:
+    """Download CHANGELOG.md and parse it into release entries."""
+    try:
+        content = _fetch_text(changelog_url)
+    except (urllib.error.HTTPError, urllib.error.URLError):
+        return []
+    return _parse_changelog_md(content, owner, repo, count)
+
+
 def fetch_release_window(source: Dict[str, Any], count: int = 4) -> Dict[str, Any]:
     source_type = source.get("source_type")
     releases: List[Dict[str, Any]] = []
 
     if source_type == "github" and source.get("owner") and source.get("repo"):
         releases = fetch_github_releases(source["owner"], source["repo"], count=count)
+    elif source_type == "github_changelog" and source.get("changelog_url"):
+        releases = fetch_github_changelog(
+            source["changelog_url"],
+            source.get("owner", ""),
+            source.get("repo", ""),
+            count=count,
+        )
     elif source_type == "npm" and source.get("npm_package"):
         releases = fetch_npm_releases(source["npm_package"], count=count)
     elif source_type == "pypi" and source.get("pypi_package"):

@@ -20,6 +20,15 @@ Exclude versions containing:
 
 Case-insensitive matching is required.
 
+## Source Types
+
+| Type | Description | Key Fields |
+|------|-------------|------------|
+| `github` | GitHub Releases API | `repo_url` → `owner`/`repo` |
+| `github_changelog` | Parse `CHANGELOG.md` from raw URL | `changelog_url`, `repo_url` |
+| `npm` | npm registry | `package` |
+| `pypi` | PyPI JSON API | `package` |
+
 ## Failure Strategy
 
 - Return partial results when possible.

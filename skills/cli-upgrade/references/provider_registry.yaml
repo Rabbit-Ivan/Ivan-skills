@@ -7,6 +7,19 @@ providers:
     repo_url: https://github.com/openai/codex
     official_url: https://www.npmjs.com/package/@openai/codex
 
+  - id: claude-code
+    aliases:
+      - claude-code
+      - claude
+      - claudecode
+    source_type: github_changelog
+    changelog_url: https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md
+    repo_url: https://github.com/anthropics/claude-code
+    official_url: https://github.com/anthropics/claude-code
+    social_tip: >
+      关注 Anthropic 官方 Twitter (@AnthropicAI) 和 Claude Code 团队成员动态，
+      第一时间获取功能预告和使用技巧。
+
   - id: generic-npm-template
     aliases: []
     source_type: npm

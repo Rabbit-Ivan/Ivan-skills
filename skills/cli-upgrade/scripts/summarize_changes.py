@@ -122,6 +122,10 @@ def render_markdown(result: Dict[str, Any]) -> str:
         seen.add(url)
         lines.append(f"- {url}")
 
+    social_tip = result.get("social_tip")
+    if social_tip:
+        lines.extend(["", "## 小贴士", f"- {social_tip.strip()}"])
+
     return "\n".join(lines) + "\n"
 
 

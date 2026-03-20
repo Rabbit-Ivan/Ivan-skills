@@ -142,6 +142,8 @@ def resolve_target(
         "repo": None,
         "npm_package": None,
         "pypi_package": None,
+        "changelog_url": None,
+        "social_tip": None,
         "official_url": official_url,
         "confidence": "low",
         "needs_user_input": False,
@@ -196,6 +198,24 @@ def resolve_target(
                     }
                 )
                 return result
+
+        if provider_type == "github_changelog" and provider.get("changelog_url"):
+            parsed = parse_github_repo(provider.get("repo_url", ""))
+            owner = parsed["owner"] if parsed else None
+            repo = parsed["repo"] if parsed else None
+            result.update(
+                {
+                    "source_type": "github_changelog",
+                    "changelog_url": provider["changelog_url"],
+                    "repo_url": parsed["repo_url"] if parsed else provider.get("repo_url"),
+                    "owner": owner,
+                    "repo": repo,
+                    "official_url": official_url or provider.get("official_url") or provider.get("repo_url"),
+                    "social_tip": provider.get("social_tip"),
+                    "confidence": "high",
+                }
+            )
+            return result
 
         if provider_type == "npm" and provider.get("package"):
             result.update(

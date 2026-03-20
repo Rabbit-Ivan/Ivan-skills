@@ -55,6 +55,7 @@ def main() -> int:
         "previous_stables": release_window.get("previous_stables", []),
         "highlights": build_highlights(release_rows),
         "sources": build_sources(source, release_rows),
+        "social_tip": source.get("social_tip"),
         "confidence": source.get("confidence", "low"),
         "needs_user_input": source.get("needs_user_input", False),
         "message": source.get("message", ""),
