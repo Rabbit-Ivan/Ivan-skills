@@ -193,7 +193,9 @@ def resolve_target(
                         "repo_url": parsed["repo_url"],
                         "owner": parsed["owner"],
                         "repo": parsed["repo"],
+                        "npm_package": provider.get("npm_package") or provider.get("package"),
                         "official_url": official_url or provider.get("official_url") or parsed["repo_url"],
+                        "social_tip": provider.get("social_tip"),
                         "confidence": "high",
                     }
                 )
