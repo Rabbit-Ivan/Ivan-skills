@@ -18,9 +18,10 @@ description: 通用版本升级对比助手。用于查询任意 CLI 或 App 的
 
 2. 确认真实最新版本（关键步骤，不可跳过）
 - **绝对不要仅依赖 WebSearch 返回的版本号**，WebSearch 结果经常滞后。
-- 对于 npm 包（如 Claude Code）：先用 `npm view <package> versions --json | tail -10` 获取真实版本列表。
+- 对于 Homebrew 安装的工具（如 Claude Code）：先用 `brew info claude-code --json=v2 | python3 -c "import json,sys; d=json.load(sys.stdin); print(d['formulae'][0]['versions']['stable'])"` 获取 Homebrew 最新稳定版，再用 `claude --version` 获取当前已安装版本。
+- 对于 npm 包：用 `npm view <package> versions --json | tail -10` 获取真实版本列表。
 - 对于 GitHub 项目：用 `WebFetch` 抓取 `https://github.com/{owner}/{repo}/releases` 页面确认最新版本。
-- 两种方式互相印证，以实际 API/页面返回为准。
+- 多种方式互相印证，以实际 API/页面返回为准。
 
 3. 解析数据源
 - 优先用官方源：GitHub Releases、npm、PyPI。
@@ -77,10 +78,11 @@ Sources:
 
 Claude Code 发版极快（几乎日更），是最容易出现版本滞后问题的工具：
 
-1. **必须先用 npm 确认版本**：`npm view @anthropic-ai/claude-code versions --json | tail -10`
+1. **用 Homebrew 确认版本**：`brew info claude-code --json=v2` 获取最新可用版本，`claude --version` 获取当前已安装版本
 2. **GitHub Releases 是权威详情源**：每个版本都有独立的 Release 页面，内容比 CHANGELOG.md 更完整
 3. **不要用 CHANGELOG.md**：更新可能不及时，且格式解析容易丢信息
 4. **四个版本并行抓取**：`WebFetch` 四个 release tag 页面同时请求
+5. **升级命令用 Homebrew**：`brew upgrade claude-code`（用户通过 Homebrew 管理安装）
 
 ## Scripts
 

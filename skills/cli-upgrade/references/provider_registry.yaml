@@ -15,17 +15,18 @@ providers:
       - claude code
     source_type: github
     repo_url: https://github.com/anthropics/claude-code
-    official_url: https://www.npmjs.com/package/@anthropic-ai/claude-code
-    npm_package: "@anthropic-ai/claude-code"
-    verify_via_npm: true
+    official_url: https://formulae.brew.sh/formula/claude-code
+    install_via: homebrew
+    homebrew_formula: claude-code
     social_tip: >
       关注 Anthropic 官方 Twitter (@AnthropicAI) 和 Claude Code 团队成员动态，
       第一时间获取功能预告和使用技巧。
     notes: >
       Claude Code 发版极快（几乎日更），WebSearch 结果可能滞后。
-      必须先用 npm view 或 GitHub Releases API 确认真实最新版本号，
+      必须先用 brew info 或 GitHub Releases API 确认真实最新版本号，
       再逐版本抓取 GitHub Release 详情页获取完整 release notes。
       绝对不要仅依赖 WebSearch 返回的版本号。
+      用户通过 Homebrew 管理安装，升级命令为 brew upgrade claude-code。
 
   - id: generic-npm-template
     aliases: []

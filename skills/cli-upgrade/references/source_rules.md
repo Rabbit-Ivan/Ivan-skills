@@ -13,10 +13,11 @@
 **WebSearch 结果经常滞后，绝不能作为版本号的唯一来源。**
 
 确认真实最新版本的优先级：
-1. `npm view <package> versions --json`（npm 包，最可靠）
-2. GitHub Releases 页面（WebFetch 抓取）
-3. GitHub API: `https://api.github.com/repos/{owner}/{repo}/releases?per_page=10`
-4. WebSearch（仅作辅助参考，不可作为唯一依据）
+1. `brew info <formula> --json=v2`（Homebrew 包，如 Claude Code，最可靠）
+2. `npm view <package> versions --json`（npm 包）
+3. GitHub Releases 页面（WebFetch 抓取）
+4. GitHub API: `https://api.github.com/repos/{owner}/{repo}/releases?per_page=10`
+5. WebSearch（仅作辅助参考，不可作为唯一依据）
 
 ## Stable Version Filter
 
