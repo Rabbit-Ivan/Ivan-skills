@@ -468,6 +468,16 @@
       "skillFolderHash": "a61356a8c9077a5b5268647cc7834f4ecab1d233",
       "installedAt": "2026-03-30T09:00:26.550Z",
       "updatedAt": "2026-03-30T09:00:26.550Z"
+    },
+    "goalpro": {
+      "source": "KimYx0207/GoalPro",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/KimYx0207/GoalPro.git",
+      "ref": "main",
+      "skillPath": "skills/goalpro/SKILL.md",
+      "skillFolderHash": "92280d3eeb8e216045dfdae779865e6ac2f066b8",
+      "installedAt": "2026-06-22T08:20:36.119Z",
+      "updatedAt": "2026-06-22T08:20:36.119Z"
     }
   },
   "dismissed": {

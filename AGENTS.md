@@ -1,7 +1,7 @@
 # Repository Guidelines
 
 ## 项目概述
-Ivan 的 Claude Code skill 管理中心（`Rabbit-Ivan/Ivan-skills`）。32 个 skill，654 文件，纯内容仓库。
+Ivan 的 Claude Code skill 管理中心（`Rabbit-Ivan/Ivan-skills`）。61 个 skill，611 文件，纯内容仓库。
 
 ## 安装
 ```bash
@@ -48,8 +48,9 @@ skills/<name>/
 低复杂度（<10 文件，标准结构）：其余 22 个 skill。
 
 ## 外部来源 Skill（.skill-lock.json 追踪）
-5 个 skill 从外部仓库安装，修改前确认来源：
+6 个 skill 从外部仓库安装，修改前确认来源：
 - `find-skills`、`planning-with-files`、`markitdown`、`frontend-slides`、`.agents`
+- `goalpro`：来源 `KimYx0207/GoalPro`
 
 ## 跨 Skill 关联
 - docx ↔ pptx：共享 OOXML 脚本模式，修改 ooxml/ 时两者都需验证

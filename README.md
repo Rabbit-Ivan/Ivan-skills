@@ -45,7 +45,7 @@ Ivan-skills/
 ```
 
 说明：
-- 当前 `skills/` 下共 30 个 skill 目录。
+- 当前正式管理 61 个 skill 目录。
 - 每个 skill 至少包含 `SKILL.md`。
 - `skills_backup_20260214/` 仅作本地备份，不进入版本管理。
 
